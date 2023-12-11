@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>Employee Registration Form</header>
+
+      
+
+<div class="form-container" id="personalDetails">
+    <div class="form">
+         
+                
+                        <u><span class="title">PERSONAL DETAILS:</span></u>
+                        
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your Full Name" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Date Of Birth</label>
+                                <input type="date" placeholder="Enter Your Date Of Birth" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="email" placeholder="Enter your Email" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <input type="text" placeholder="Enter your Gender" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <input type="number" placeholder="Enter your Mobile Number" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Occupation</label>
+                                <input type="text" placeholder="Enter your Occupation" required>
+                            </div>
+                        
+                    
+        <!-- ... Personal Details ... -->
+        <button class="nextBtn" onclick="showIdentityDetails()">NEXT</button>
+    </div>
+</div>
+
+<div class="form-container" id="identityDetails" style="display: none;">
+    <div class="form">
+
+               <u><span class="title">IDENTITY DETAILS:</span></u>
+
+                        
+                            <div class="input-field">
+                            <label>ID type</label>
+                            <input type="text" placeholder="Enter ID type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID number</label>
+                            <input type="text" placeholder="Enter Your ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issue Authority</label>
+                            <input type="text" placeholder="Enter your department" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issue Date</label>
+                            <input type="date" placeholder="Enter ID issue Date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issue state</label>
+                            <input type="text" placeholder="Enter ID issue state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expiry date</label>
+                            <input type="date" placeholder="Enter your ID expiry date" required>
+                        </div>
+        <!-- ... Identity Details ... -->
+        <button class="backBtn" onclick="showPersonalDetails()">BACK</button>
+        <button class="nextBtn" onclick="showFamilyDetails()">NEXT</button>
+    </div>
+</div>
+
+<div class="form-container" id="familyDetails" style="display: none;">
+    <div class="form">
+        <!-- ... Family Details ... -->
+         <u><span class="title">FAMILY DETAILS:</span></u>
+                        
+                             <div class="input-field">
+                            <label>Father's Name</label>
+                            <input type="text" placeholder="Enter your Father's Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother's Name</label>
+                            <input type="text" placeholder="Enter Your Mother's Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Father's Current Occupation</label>
+                            <input type="text" placeholder="Enter your Father's Current Occupation" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother's Current Occupation</label>
+                            <input type="text" placeholder="Enter your Mother's Current Occupation" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Home Number</label>
+                            <input type="number" placeholder="Enter your Home Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Family's Annual Income</label>
+                            <input type="text" placeholder="Enter your Family's Annual Income" required>
+                        </div>
+        <button class="backBtn" onclick="showIdentityDetails()">BACK</button>
+        <button class="nextBtn" onclick="showAddressDetails()">NEXT</button>
+    </div>
+</div>
+
+<div class="form-container" id="addressDetails" style="display: none;">
+    <div class="form">
+        <!-- ... Address Details ... -->
+         <u><span class="title">ADDRESS DETAILS:</span></u>
+                    
+                         <div class="input-field">
+                            <label>Address type</label>
+                            <input type="text" placeholder="Enter Address type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter Your Nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter your State" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter your District" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" placeholder="Enter your Block Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" placeholder="Enter your Ward Number" required>
+                        </div>
+        <div class="buttons">
+            <button class="backBtn" onclick="showFamilyDetails()">BACK</button>
+            <button class="submitBtn" onclick="submitForm()">SUBMIT</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <script src="main.js"></script>
+        
+    </div>
+</body>
+</html>
+
